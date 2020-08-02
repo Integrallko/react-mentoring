@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GreetingPanel user should view component 1`] = `
+<div
+  className="greet"
+>
+  Hello World!
+</div>
+`;
