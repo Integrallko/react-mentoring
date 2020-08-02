@@ -6,9 +6,9 @@
     "scripts": {
         "bundle": "webpack",
         "test": "jest",
-        "start": "webpack-dev-server --mode development --open --hot",
+        "start": "webpack-dev-server",
         "build:dev": "cross-env NODE_ENV=development webpack",
-        "build:prod": "cross-env NODE_ENV=production webpack -p",
+        "build:prod": "cross-env NODE_ENV=production webpack",
         "check-types": "tsc"
     },
     "author": "Anastasia Kalenik",
@@ -16,6 +16,8 @@
     "dependencies": {
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
+        "react-redux": "^7.2.1",
+        "react-router": "^5.2.0",
         "redux": "^4.0.5"
     },
     "devDependencies": {
@@ -35,6 +37,7 @@
         "css-loader": "^4.2.0",
         "html-webpack-plugin": "^4.3.0",
         "jest": "^26.2.2",
+        "mini-css-extract-plugin": "^0.9.0",
         "optimize-css-assets-webpack-plugin": "^5.0.3",
         "react-test-renderer": "^16.13.1",
         "style-loader": "^1.2.1",
@@ -43,6 +46,7 @@
         "typescript": "^3.9.7",
         "webpack": "^4.44.1",
         "webpack-cli": "^3.3.12",
-        "webpack-dev-server": "^3.11.0"
+        "webpack-dev-server": "^3.11.0",
+        "webpack-merge": "^5.0.9"
     }
 }
